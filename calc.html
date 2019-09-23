@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+      <meta charset="UTF-8">
+      <title> Calculator </title>
+      <link rel="stylesheet" type="text/css" href="calc.css" title="style" />
+      <script src="calc.js"></script>
+    </head>
+    <body>
+      <header>
+        <h1> Calculator </h1>
+      </header>
+        <div id='calc-contain'>
+
+          <form name="calculator">
+
+            <input type="text" name="answer" />
+
+            <br>
+
+            <input type="button" class = "number" value=" sin " onclick="sinclicked()" />
+            <input type="button" class = "number" value=" cos " onclick="cosclicked()" />
+            <input type="button" class = "number" value=" tan " onclick="tanclicked()" />
+            <input type="button" class = "clear" value=" AC " onclick="calculator.answer.value = ''" />
+            <input type="button" class = "clear" value=" C " onclick="backspace()" />
+            </br>
+
+            <input type="button" class = "number" value=" 7 " onclick="calculator.answer.value += '7'" />
+            <input type="button" class = "number" value=" 8 " onclick="calculator.answer.value += '8'" />
+            <input type="button" class = "number" value=" 9 " onclick="calculator.answer.value += '9'" />
+            <input type="button" class = "number" value=" √ " onclick="root()" />
+            <input type="button" class = "number" value=" ^2 " onclick="square()" />
+            </br>
+
+            <input type="button" class = "number" value=" 4 " onclick="calculator.answer.value += '4'" />
+            <input type="button" class = "number" value=" 5 " onclick="calculator.answer.value += '5'" />
+            <input type="button" class = "number" value=" 6 " onclick="calculator.answer.value += '6'" />
+            <input type="button" class = "number" value=" x " onclick="calculator.answer.value += '*'" />
+            <input type="button" class = "number" value=" ÷ " onclick="calculator.answer.value += '/'" />
+            </br>
+
+            <input type="button" class = "number" value=" 1 " onclick="calculator.answer.value += '1'" />
+            <input type="button" class = "number" value=" 2 " onclick="calculator.answer.value += '2'" />
+            <input type="button" class = "number" value=" 3 " onclick="calculator.answer.value += '3'" />
+            <input type="button" class = "number" value=" + " onclick="calculator.answer.value += '+'" />
+            <input type="button" class = "number" value=" - " onclick="calculator.answer.value += '-'" />
+            </br>
+
+            <input type="button" class = "number" value=" 00 " onclick="calculator.answer.value += '00'" />
+            <input type="button" class = "number" value=" 0 " onclick="calculator.answer.value += '0'" />
+            <input type="button" class = "number" value=" . " onclick="calculator.answer.value += '.'" />
+            <input type="button" class = "enter" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+            </br>
+
+          </form>
+        </div>
+        <footer>&copy; Author: <span>Johnny Kang</span> </footer>
+    </body>
+</html>

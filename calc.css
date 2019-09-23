@@ -1,0 +1,71 @@
+/* Outside Calculator Background */
+body {
+	font-family: NimbusSanL, Arial, sans-serif;
+	text-align: center;
+	color:#202020;
+	background-color:Silver;
+}
+
+/*Footer set by prof*/
+footer{
+	padding-top:10px;
+	text-align:center;
+	font-size:10px;
+	color:LightSlateGrey;
+}
+
+#calc-contain{
+  position: relative;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 0px auto;
+  padding: 20px 20px 50px 20px;
+  background-color: #363333;
+}
+
+.number{
+  width: 15%;
+  background: #423c3c;
+}
+
+.enter{
+  width: 35%;
+  background: #423c3c;
+}
+
+.clear{
+ background: #d61515;
+ width: 15%;
+}
+
+/*Button Setting*/
+input[type=button] {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 7px;
+  margin-left: 13px;
+  margin-top: 20px;
+}
+
+input[type=button]:hover {
+  background-color: #003300; //Hover color is green
+  color: white;
+}
+
+input[type = text] {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 4px 0px 12px black inset;
+  background: #e0fffe; //input color
+}
+
+@media screen and (min-width:600px) {
+  [class*="calculator"] {
+    width:50%;
+  }
